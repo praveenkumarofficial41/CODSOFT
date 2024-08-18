@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">HIRE ME</a></li>
+            </ul>
+            <h1>I'm Praveen</h1>
+            <p>I'm a full stack developer</p>
+            <p>Completed my course at KGmicro college</p>
+            <p>This is a portfolio page that I have created for internship at Codsoft</p>
+            <button onclick="download()">My Resume</button>
+             <div>
+                <img src="IMG.jpg" alt="photo">
+             </div>  
+             <script>
+                function download(){
+                    const link = document.createElement('a')
+                    link.href = './Resume.pdf'
+                    link.download = 'Resume.pdf'
+                    link.click()
+                }
+             </script>
+        </nav>
+    
+</body>
+</html>
